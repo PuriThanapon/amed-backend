@@ -6,8 +6,8 @@ services:
     # container_name: backend-api  <-- เอาออกเพื่อให้สั่ง --scale ได้
     expose:
       - "3000"  # เปิดพอร์ตภายในเครือข่าย Docker เท่านั้น
-    ports:
-      - "3000:3000" # เพิ่มบรรทัดนี้ชั่วคราวเพื่อทดสอบ
+    # ports:
+    #   - "3000:3000" # เพิ่มบรรทัดนี้ชั่วคราวเพื่อทดสอบ
     environment:
       - NODE_ENV=production
       # - DATABASE_URL=postgresql://user:pass@db:5432/mydb (ถ้ามี)
